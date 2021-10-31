@@ -19,6 +19,8 @@ https://cloud.google.com/compute/docs/gpus/install-drivers-gpu?hl=zh-cn
 https://developer.nvidia.com/cuda-10.1-download-archive-update2?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1604&target_type=debnetwork
 
 安装步骤
+这一步需要认真仔细阅读。
+我选择安装的系统为`Ubuntu 20.04`
 https://docs.nvidia.com/cuda/archive/10.1/cuda-installation-guide-linux/index.html#about-this-document
 
 
@@ -26,11 +28,15 @@ https://docs.nvidia.com/cuda/archive/10.1/cuda-installation-guide-linux/index.ht
 首先检查是否具有gcc
 
 `gcc --version`
+
 没有则安装
 
 `sudo apt install build-essentionl`
 
-更换Linux内核与版本一致
+更换Linux内核与版本一致（cuda11,ubuntu 20.04不用管，可以直接安装)
+
+For Ubuntu LTS on x86-64, both the HWE kernel (e.g. 5.x for 18.04) and the server LTS kernel (e.g. 4.15.x for 18.04) are supported in CUDA 11.1. Visit https://wiki.ubuntu.com/Kernel/Support for more information. 
+
 https://blog.csdn.net/qq_43530144/article/details/104017656
 
 查找版本
@@ -53,4 +59,15 @@ https://blog.csdn.net/qq_43530144/article/details/104017656
 再重启系统
 再次确认
 `uname -r`
+
+
+安装nVidia 驱动
+
+安装anaconda
+
+安装pytorch
+
+
+
+
 
